@@ -5,7 +5,7 @@ import pandas as pd
 @st.cache_data
 def load_excel_data():
     # โหลดข้อมูลจากไฟล์ Excel
-    df = pd.read_excel('members.xlsx', sheet_name='Sheet1')  # ปรับตามชื่อแผ่นงานของคุณ
+    df = pd.read_excel('chkmem/members.xlsx', sheet_name='Sheet1')  # ปรับตามชื่อแผ่นงานของคุณ
     
     # ลบ comma ในคอลัมน์รหัสพนักงานแล้วแปลงเป็นตัวเลขแบบ integer
     df['รหัสพนักงาน'] = df['รหัสพนักงาน'].astype(str).str.replace(',', '', regex=True).astype(int)
