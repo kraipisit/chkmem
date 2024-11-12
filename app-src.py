@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-import openpyxl as xl
+#import openpyxl as xl
+
 # ฟังก์ชันโหลดข้อมูลจากไฟล์ Excel
 @st.cache_data
 def load_excel_data():
